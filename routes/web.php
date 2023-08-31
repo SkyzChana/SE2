@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\UserroleController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/roles',[UserroleController::class,'index']);
