@@ -153,11 +153,22 @@
           </div>
           <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
+              <a href="javascript:;" class="nav-link text-white font-weight-bold px-1">
                 <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
+                <span class="d-sm-inline d-none">{{ Auth::user()->name }}</span>
               </a>
             </li>
+            <li class="nav-item d-flex align-items-center">
+                <a href="/profile" class="nav-link text-white font-weight-bold px-1">
+                  <span class="d-sm-inline d-none">My Profile</span>
+                </a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a href="/profile" class="nav-link text-white font-weight-bold px-1">
+                  <span class="d-sm-inline d-none">Logout</span>
+                </a>
+            </li>
+
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
                 <div class="sidenav-toggler-inner">
